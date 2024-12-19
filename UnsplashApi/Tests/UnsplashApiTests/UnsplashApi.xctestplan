@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "49A46599-E6C9-4C39-8C13-F746605813E3",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "UnsplashApiTests",
+        "name" : "UnsplashApiTests"
+      }
+    }
+  ],
+  "version" : 1
+}

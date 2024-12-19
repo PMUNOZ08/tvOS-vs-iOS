@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="23094" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="Rz2-K0-ksD" customClass="CollectionViewCell" customModule="NSCoder_tvOS_UIKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="547" height="296"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="547" height="296"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qKz-MZ-aur">
+                        <rect key="frame" x="0.0" y="0.0" width="547" height="296"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="7PP-Ag-gPX"/>
+            <constraints>
+                <constraint firstItem="qKz-MZ-aur" firstAttribute="top" secondItem="Rz2-K0-ksD" secondAttribute="top" id="Rwq-ZJ-DZj"/>
+                <constraint firstAttribute="trailing" secondItem="qKz-MZ-aur" secondAttribute="trailing" id="UzK-73-SKL"/>
+                <constraint firstAttribute="bottom" secondItem="qKz-MZ-aur" secondAttribute="bottom" id="tP0-M2-anA"/>
+                <constraint firstItem="qKz-MZ-aur" firstAttribute="leading" secondItem="Rz2-K0-ksD" secondAttribute="leading" id="uTG-WL-hKp"/>
+            </constraints>
+            <size key="customSize" width="547" height="296"/>
+            <connections>
+                <outlet property="imgView" destination="qKz-MZ-aur" id="lc1-sR-vUe"/>
+            </connections>
+            <point key="canvasLocation" x="108.5" y="88"/>
+        </collectionViewCell>
+    </objects>
+</document>

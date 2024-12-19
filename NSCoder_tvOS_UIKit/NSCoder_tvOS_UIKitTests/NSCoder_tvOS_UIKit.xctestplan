@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "0C5FA3D1-3E65-4763-918A-7CEB658343E5",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:NSCoder_tvOS_UIKit.xcodeproj",
+      "identifier" : "004D1F8C2CD635D700B9F024",
+      "name" : "NSCoder_tvOS_UIKit"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:NSCoder_tvOS_UIKit.xcodeproj",
+        "identifier" : "004D1F9F2CD635D900B9F024",
+        "name" : "NSCoder_tvOS_UIKitTests"
+      }
+    }
+  ],
+  "version" : 1
+}

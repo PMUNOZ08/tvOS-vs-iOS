@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.XIB" version="3.0" toolsVersion="23094" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ButtonsController" customModule="NSCoder_tvOS_UIKit" customModuleProvider="target">
+            <connections>
+                <outlet property="btnOne" destination="zp2-hM-TGA" id="BqS-o5-jfg"/>
+                <outlet property="btnTwo" destination="ClB-49-VCQ" id="YWj-Uk-6n0"/>
+                <outlet property="focusView" destination="2Cc-AD-ixp" id="Hi0-kc-HAk"/>
+                <outlet property="imgView" destination="1Ca-0g-OyJ" id="foh-4k-Szs"/>
+                <outlet property="topLabelConstraint" destination="8o3-el-IqS" id="rOB-qt-NqG"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Eym-vH-oyN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zp2-hM-TGA">
+                    <rect key="frame" x="100" y="120" width="392" height="86"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="392" id="7lF-pt-XQi"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="button1Tapped:" destination="-1" eventType="primaryActionTriggered" id="tTU-8a-UX4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ClB-49-VCQ">
+                    <rect key="frame" x="1428" y="120" width="392" height="86"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="392" id="4XG-SE-zSn"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="button2Tapped:" destination="-1" eventType="primaryActionTriggered" id="mHA-N9-3Dp"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Cc-AD-ixp" customClass="ViewFocusable" customModule="NSCoder_tvOS_UIKit" customModuleProvider="target">
+                    <rect key="frame" x="100" y="556" width="420" height="235"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Ca-0g-OyJ">
+                            <rect key="frame" x="0.0" y="0.0" width="420" height="235"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="1Ca-0g-OyJ" firstAttribute="top" secondItem="2Cc-AD-ixp" secondAttribute="top" id="7fz-x5-Cfz"/>
+                        <constraint firstItem="1Ca-0g-OyJ" firstAttribute="leading" secondItem="2Cc-AD-ixp" secondAttribute="leading" id="QoE-5f-TpF"/>
+                        <constraint firstAttribute="height" constant="235" id="fWX-46-6lq"/>
+                        <constraint firstAttribute="width" constant="420" id="hEf-or-ViB"/>
+                        <constraint firstAttribute="bottom" secondItem="1Ca-0g-OyJ" secondAttribute="bottom" id="hj6-Vz-Zm5"/>
+                        <constraint firstAttribute="trailing" secondItem="1Ca-0g-OyJ" secondAttribute="trailing" id="jf5-U8-r1u"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Source: Unsplash by BoliviaInteligente" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mNF-T2-fad">
+                    <rect key="frame" x="100" y="806" width="420" height="71"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="nkI-NY-t1X"/>
+            <color key="backgroundColor" systemColor="tertiaryLabelColor"/>
+            <constraints>
+                <constraint firstItem="mNF-T2-fad" firstAttribute="width" secondItem="1Ca-0g-OyJ" secondAttribute="width" id="2q7-3C-KgI"/>
+                <constraint firstItem="mNF-T2-fad" firstAttribute="top" secondItem="2Cc-AD-ixp" secondAttribute="bottom" constant="15" id="8o3-el-IqS"/>
+                <constraint firstItem="mNF-T2-fad" firstAttribute="centerX" secondItem="1Ca-0g-OyJ" secondAttribute="centerX" id="Qbh-Oo-i7C"/>
+                <constraint firstItem="nkI-NY-t1X" firstAttribute="trailing" secondItem="ClB-49-VCQ" secondAttribute="trailing" constant="20" id="S0f-zJ-fU4"/>
+                <constraint firstItem="2Cc-AD-ixp" firstAttribute="top" secondItem="zp2-hM-TGA" secondAttribute="bottom" constant="350" id="btp-AL-GBM"/>
+                <constraint firstItem="zp2-hM-TGA" firstAttribute="top" secondItem="nkI-NY-t1X" secondAttribute="top" constant="60" id="cga-sB-vKP"/>
+                <constraint firstItem="zp2-hM-TGA" firstAttribute="leading" secondItem="nkI-NY-t1X" secondAttribute="leading" constant="20" id="gQg-X2-pYW"/>
+                <constraint firstItem="ClB-49-VCQ" firstAttribute="centerY" secondItem="zp2-hM-TGA" secondAttribute="centerY" id="oqG-gY-Xum"/>
+                <constraint firstItem="2Cc-AD-ixp" firstAttribute="leading" secondItem="zp2-hM-TGA" secondAttribute="leading" id="zXz-cc-MII"/>
+            </constraints>
+            <point key="canvasLocation" x="-140" y="-35"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="tertiaryLabelColor">
+            <color white="0.0" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
