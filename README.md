@@ -1,10 +1,10 @@
-# Securing Apikeys
+# tvOS vs iOS
 
 [![Swift Version][swift-image]][swift-url]
 ![platforms]
 [![License][license-image]][license-url]
 
-This repository is part of [NSCoder Night Madrid](https://nscoder-mad.tumblr.com) Talk "Securing Apikeys using Cloudkit".
+This repository is part of [NSCoder Night Madrid](https://nscoder-mad.tumblr.com) Talk "tvOS vs iOS".
 
 The repository include:
 
@@ -12,47 +12,46 @@ The repository include:
 - Initial Project
 - Final Project
 
-The sample project is a simple app that uses an api service to show a grid with pictures. It present a picture on full screen when is selected and allow to make a mask with de logo of NSCoder Night Madrid.
-The initial project just store the access key in a constant and uses it.
-The final project in order to secure the access key:
+The sample project is a simple app that has several focus challenges focus management we can find when deloping for tvOS . It contains a Tabbar with three controllers:
 
-- Get the access key from Cloud kit in a secure way.
-- When the app gets the access key stores it in keychain to be resused after.
-- As an extra layer of security the access key in encrypted and decrypted using [Secure Enclave](https://support.apple.com/en-gb/guide/security/sec59b0b31ff/web)
-- To avoid the called "Man in the middle", la app makes use of SSL pining.
-- SSl pining can be performed using the host certificate or a hash of certificate public key 
+- Buttons
 
-The app can be tested on iPhone, iPad, AppleTv o Mac
+- TestFields
+
+- Collections
+
+The final project show cases of:
+
+- Select preference to element to get focus.
+
+- Move the focus between 2  non-adjacent elements. (UIFocusGuide)
+
+- Converting a view to focusable.
+
+- Use of TVCardView.
+
+- Focus management in Collections.
+
+- Input test in tvOS and more .......
+
+The app must be tested AppleTv
 
 ## Usage
 
 The api used is [unsplash](https://unsplash.com)
 In order to test sample projects yout need an access key. Your can register and create a free new one on [Join Unsplash](https://unsplash.com/join)
 
-To test initial project just replace the placeholder in class UnplashClient:
+To test initial project just replace the placeholder in class UnsplashRequestBuilder of SPM UnsplashApi:
 
 ```swift
-private let apikey_unsplash = "UNSPLASH ACCESS KEY"
+private letapiKeyUnplash = "UNSPLASH ACCESS KEY"
 ```
 
-To test final sample project, the slides information maybe is useful:
+To test final sample project, the slides information maybe is useful. It contains explained each property and function used to focus management.
 
-- You must create a container in CloudKit
-- Create a new record type. Named it "ApiKeys"
-- Add a field to new record type created. Named it "unplash"
-- Add a new record with your api unsplash access key.
+## Note
 
-After this steps you must replace this  with real values in class ApiKeyManager:
-
-```swift
-let ckRecordId = "CLOUDKIT RECORD ID"
-```
-
-## Screenshots
-
-![Alt text](/screenshots/screenshot1.png?raw=true)
-![Alt text](/screenshots/screenshot2.png?raw=true)
-![Alt text](/screenshots/screenshot3.png?raw=true)
+Use UIkit for interfave, SwiftUI version will be added soon.
 
 ## License
 
@@ -66,8 +65,8 @@ let ckRecordId = "CLOUDKIT RECORD ID"
 
 I'm a iOS, tvOS and MacOS freelance developer since 2011
 
-[swift-image]:https://img.shields.io/badge/swift-5.0-orange.svg
+[swift-image]:https://img.shields.io/badge/swift-6.0-orange.svg
 [swift-url]: https://swift.org/
-[platforms]: https://img.shields.io/badge/platforms-iOS%20tvOS%20MacOS-oreen
+[platforms]: https://img.shields.io/badge/platforms-itvOS-oreen
 [license-image]: https://img.shields.io/badge/License-MIT-blue.svg
 [license-url]: LICENSE
