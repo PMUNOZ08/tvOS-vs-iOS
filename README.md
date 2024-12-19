@@ -44,7 +44,7 @@ In order to test sample projects yout need an access key. Your can register and 
 To test initial project just replace the placeholder in class UnsplashRequestBuilder of SPM UnsplashApi:
 
 ```swift
-private letapiKeyUnplash = "UNSPLASH ACCESS KEY"
+private let apiKeyUnplash = "UNSPLASH ACCESS KEY"
 ```
 
 To test final sample project, the slides information maybe is useful. It contains explained each property and function used to focus management.
