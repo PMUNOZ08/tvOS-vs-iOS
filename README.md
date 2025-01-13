@@ -9,8 +9,10 @@ This repository is part of [NSCoder Night Madrid](https://nscoder-mad.tumblr.com
 The repository include:
 
 - Talk Slides.
-- Initial Project
-- Final Project
+- Initial Project UIKit
+- Final Project UIKit
+- Initial Project  SwiftUI
+- Final Project SwiftUI
 
 The sample project is a simple app that has several focus challenges focus management we can find when deloping for tvOS . It contains a Tabbar with three controllers:
 
@@ -20,7 +22,7 @@ The sample project is a simple app that has several focus challenges focus manag
 
 - Collections
 
-The final project show cases of:
+The final project UIKit show cases of:
 
 - Select preference to element to get focus.
 
@@ -34,6 +36,22 @@ The final project show cases of:
 
 - Input test in tvOS and more .......
 
+The final project SwiftUI show cases of:
+
+- Select preference to element to get focus. (@FocusState)
+
+- Move the focus between 2 non-adjacent elements. (FocusSection)
+
+- Converting a view to focusable.
+
+- Use of buttonStyle Card.
+
+- Focus management in Collections.
+
+- Extension for TopShelf (Sectioned, Carousel Actions, and Carousel Details.
+
+- Input test in tvOS, highlight hoverEffect  and more .......
+
 The app must be tested AppleTv
 
 ## Usage
@@ -44,7 +62,7 @@ In order to test sample projects yout need an access key. Your can register and 
 To test initial project just replace the placeholder in class UnsplashRequestBuilder of SPM UnsplashApi:
 
 ```swift
-private let apiKeyUnplash = "UNSPLASH ACCESS KEY"
+private letapiKeyUnplash = "UNSPLASH ACCESS KEY"
 ```
 
 To test final sample project, the slides information maybe is useful. It contains explained each property and function used to focus management.
