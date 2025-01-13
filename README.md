@@ -67,9 +67,7 @@ private letapiKeyUnplash = "UNSPLASH ACCESS KEY"
 
 To test final sample project, the slides information maybe is useful. It contains explained each property and function used to focus management.
 
-## Note
-
-Use UIkit for interfave, SwiftUI version will be added soon.
+# 
 
 ## License
 
